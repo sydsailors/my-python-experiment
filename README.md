@@ -157,3 +157,18 @@ python3 -m venv .venv
 If VS Code asks: We noticed a new environment has been created. 
 Do you want to select it for the workspace folder?
 Click Yes. 
+
+## **Example Output (Regional Hospitals - NICU Analytics)**
+```
+---------------------------------------------------------
+Regional Hospitals - NICU Analytics
+---------------------------------------------------------
+Has A Nursery Unit:         True
+Years in Operation:         127
+Levels Offered:             ['Well-Baby Nursery', 'Special Care Nursery', 'Neonatal Intensive Care Unit', 'Regional Neonatal Intensive Care Unit']
+Length of Stay:             [1, 28, 127, 365, 50, 15]
+Minimum Length of Stay:     1
+Maximum Length of Stay:     365
+Mean Length of Stay:        97.67
+Standard Deviation of Length of Stay: 138.30
+```
