@@ -1,5 +1,5 @@
 """
-File: utils_case.py
+File: utils_sydneysailors.py
 
 Purpose: Reusable Module for My Analytics Projects
 
@@ -7,11 +7,7 @@ Description: This module provides a byline for my analytics projects.
 When we work hard to write useful code, we want it to be reusable.
 A good byline could be used in every Python analytics project we do.
 
-Author: Denise Case
-
-TODO: Change the module name in this opening docstring to use your name instead of case. 
-TODO: Change the author in this opening docstring to your name or alias. 
-TODO: Remove these TODOS after you have completed them.
+Author: Sydney Sailors
 """
 
 #####################################
@@ -29,47 +25,39 @@ import statistics
 #####################################
 
 # declare a boolean variable (has a value True or False)
-# TODO: Add another or replace this with your own boolean variable
-has_international_clients: bool = True
+has_a_nursery_unit: bool = True
 
 # declare an integer variable 
-# TODO: Add or replace this with your own integer variable
-years_in_operation: int = 10
+years_in_operation: int = 127
 
 # declare a floating point variable
-# TODO: Add or replace this with your own floating point variable
-average_client_satisfaction: float = 4.7
+average_length_of_stay: float = 97.7
 
-# declare a list of strings
-# TODO: Add or replace this with your own list  
-skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
+# declare a list of strings  
+levels_offered: list = ["Well-Baby Nursery", "Special Care Nursery", "Neonatal Intensive Care Unit", "Regional Neonatal Intensive Care Unit"]
 
-# declare a list of numbers so we can illustrate statistics skills
-# TODO: Add or replace this with your own numeric list  
-client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
+# declare a list of numbers so we can illustrate statistics skills  
+length_of_stay: list = [1, 28, 127, 365, 50, 15]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
-# TODO: Replace these variable names with the variable name of your own numeric list
-min_score: float = min(client_satisfaction_scores)  
-max_score: float = max(client_satisfaction_scores)  
-mean_score: float = statistics.mean(client_satisfaction_scores)  
-stdev_score: float = statistics.stdev(client_satisfaction_scores)
+min_score: float = min(length_of_stay)  
+max_score: float = max(length_of_stay)  
+mean_score: float = statistics.mean(length_of_stay)  
+stdev_score: float = statistics.stdev(length_of_stay)
 
 # Use a Python formatted string (f-string) to show information
-# TODO: Modify the text in the byline to fit your information
-# TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
-Stellar Analytics: Delivering Professional Insights
+Regional Hospitals - NICU Analytics
 ---------------------------------------------------------
-Has International Clients:  {has_international_clients}
+Has A Nursery Unit:         {has_a_nursery_unit}
 Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
-Minimum Satisfaction Score: {min_score}
-Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score: {mean_score:.2f}
-Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Levels Offered:             {levels_offered}
+Length of Stay:             {length_of_stay}
+Minimum Length of Stay:     {min_score}
+Maximum Length of Stay:     {max_score}
+Mean Length of Stay:        {mean_score:.2f}
+Standard Deviation of Length of Stay: {stdev_score:.2f}
 """
 
 #####################################
@@ -110,9 +98,9 @@ def main() -> None:
     Everything after the colon must be indented consistently (usually 4 spaces)
     '''
 
-    print("START main() in utils_case.py")
+    print("START main() in utils_sydneysailors.py")
     print(get_byline())
-    print("END main() in utils_case.py")
+    print("END main() in utils_sydneysailors.py")
 
 #####################################
 # Conditional Execution
