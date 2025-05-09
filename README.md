@@ -86,3 +86,34 @@ IMPORTANT: Spelling, capitalization, and name are critical. If the name or locat
 Find the `requirements.txt` file in the root of this repo and paste the entire contents into your `requirements.txt`file.
 This is a good starting point for Python projects. 
 Actual `requirements.txt` contents will vary by project. 
+# 04-git-add-commit-push.md
+
+This page provides instructions to add files to version control, commit changes, and push them to your remote repository.
+
+- git add - stages changes, adds files to source control
+- git commit - creates a labeled snapshot of staged changes.
+- git push - updates the remote repository
+
+## Before Starting
+
+Ensure your project folder is open in VS Code, and you have made changes (e.g. created the .gitignore and requirements.txt files).
+
+## Task 1. Git add-commit-push
+
+Using a terminal in VS Code (PowerShell, zsh, or bash).
+
+IMPORTANT: 
+Replace the commit message with a clear and descriptive note about what you added or changed.
+Wrap the commit message in double quotes. 
+
+```shell
+git add .
+git commit -m "Add .gitignore and requirements.txt files"
+git push -u origin main
+```
+
+After subsequent changes, you may be able to use a simpler version of the last command:
+
+```shell
+git push
+``` 
